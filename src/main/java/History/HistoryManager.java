@@ -26,10 +26,14 @@ public class HistoryManager {
     }
 
     public String last(ArrayList<String> history) {
+        String result;
         if (history.isEmpty()) {
-            return "История пуста.";
+            result = "История пуста.";
+        } else {
+            result = history.get(history.size() - 1);
         }
-        return history.get(history.size() - 1);
+        System.out.println(result); // вывод в консоль
+        return result;              // возврат для тестов
     }
 
     public void clearHistory(ArrayList<String> history) {
