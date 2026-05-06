@@ -13,11 +13,6 @@ public class CalculatorService {
     public static final String ERR_INVALID_FORMAT = "ОШИБКА: неверный формат. Используйте: число оператор число";
 
     private Map<String, Operation> operations = new HashMap<>();
-    private static final String OPERATOR_PLUS = "+";
-    private static final String OPERATOR_MINUS = "-";
-    private static final String OPERATOR_MULTIPLY = "*";
-    private static final String OPERATOR_DIVIDE = "/";
-    private static final double ZERO = 0;
 
     public CalculatorService() {
         operations.put("+", new AddOperation());
