@@ -29,10 +29,4 @@ public class CalculatorService {
 
         return operation.execute(firstNumber, secondNumber);
     }
-    private double divide(double firstNumber, double secondNumber) {
-        if (secondNumber == ZERO) {
-            throw new ArithmeticException();
-        }
-        return firstNumber / secondNumber;
-    }
 }
